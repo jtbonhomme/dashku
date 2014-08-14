@@ -1,9 +1,3 @@
-[![Build Status](https://travis-ci.org/Anephenix/dashku.png)](https://travis-ci.org/Anephenix/dashku)
-[![Coverage Status](https://coveralls.io/repos/Anephenix/dashku/badge.png?branch=master)](https://coveralls.io/r/Anephenix/dashku?branch=master)
-[![Dependency Status](https://david-dm.org/anephenix/dashku.png)](https://david-dm.org/anephenix/dashku)
-[![Code Climate](https://codeclimate.com/github/Anephenix/dashku.png)](https://codeclimate.com/github/Anephenix/dashku)
-[![Gitter chat](https://badges.gitter.im/Anephenix/dashku.png)](https://gitter.im/Anephenix/dashku)
-
 Dashku
 ===
 
@@ -26,7 +20,7 @@ Dependencies
 Installation
 ---
 
-    git clone git://github.com/Anephenix/dashku.git
+    git clone git://github.com/jtbonhomme/dashku.git
     cd dashku
     npm install
 
@@ -36,6 +30,8 @@ Booting the application
     mongod &
     redis-server &
     npm start
+
+ps: run an local instance on port 3000
 
 Seeding the database with widget templates
 ---
