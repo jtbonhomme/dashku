@@ -33,7 +33,10 @@ Booting the application
     npm start
 
 ps: run an local instance on port <code>3000</code>
-pps: to mitigate with <code>authentication.signedIn 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them</code> error, remove <code>'use strict';</code> directive in  <code>node_modules/socketstream/lib/request/responders/rpc/request.js</code> file
+
+pps: to mitigate with <code>authentication.signedIn 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them</code> error, remove <code>'use strict';</code> directive in  <code>node_modules/socketstream/lib/request/responders/rpc/request.js</code> file. See https://github.com/Anephenix/dashku/issues/54.
+
+
 
 Seeding the database with widget templates
 ---
