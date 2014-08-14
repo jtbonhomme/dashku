@@ -6,9 +6,8 @@ Dashku
 Introduction
 ---
 
-Dashku is a web application for creating dashboards and widgets in HTML, CSS, and JavaScript. It is open source, and available to download from Github. There is also a [hosted edition at Dashku.com](https://dashku.com).
+Dashku is a web application for creating dashboards and widgets in HTML, CSS, and JavaScript. It is open source, and available to download from Github.
 
-<a href="https://flattr.com/submit/auto?user_id=paulbjensen&url=https%3A%2F%2Fgithub.com%2FAnephenix%2Fdashku" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"></a>
 
 Dependencies
 ---
@@ -24,6 +23,8 @@ Installation
     cd dashku
     npm install
 
+ps: in case of error during <code>bcrypt</code> installation with npm (<code>gyp ERR! stack Error: `gyp` failed with exit code: 1</code>), simply remove <code>~/.node-gyp</code> directory
+
 Booting the application
 ---
 
@@ -31,7 +32,8 @@ Booting the application
     redis-server &
     npm start
 
-ps: run an local instance on port 3000
+ps: run an local instance on port <code>3000</code>
+pps: to mitigate with <code>authentication.signedIn 'caller', 'callee', and 'arguments' properties may not be accessed on strict mode functions or the arguments objects for calls to them</code> error, remove <code>'use strict';</code> directive in  <code>node_modules/socketstream/lib/request/responders/rpc/request.js</code> file
 
 Seeding the database with widget templates
 ---
