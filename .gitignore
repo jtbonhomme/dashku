@@ -3,3 +3,8 @@ node_modules/**/*
 .DS_Store
 dump.rdb
 npm-debug.log
+*.lock
+*.0
+*.ns
+*.json
+journal/
